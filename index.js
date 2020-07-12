@@ -24,6 +24,6 @@ app.post('/registration', (req,res) => {
     res.json({message: 'Message received'});
 });
 
-app.listen(8080, ()=>{
+app.listen(3002, ()=>{
     console.log('server is listening')
 })
