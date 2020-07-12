@@ -1,9 +1,4 @@
-HTML CSSResult
-EDIT ON
-/*importing Google font*/
-/* @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap'); */
 
-/*Html rakup styling*/
 *,
 *::before,
 *::after{
@@ -69,21 +64,21 @@ body
     display: flex;
     padding: 0 8rem;
 }
+.form-logo{
+    height: 21%;
+    width: 80%;
+    padding: 10px 25px 27px 25px;
+}
 
 /*smartphone image*/
-.phone-app-demo
-{
-    height: 61.8rem;
-    background: url('https://uditsolutions.in/babamachine/wp-content/uploads/2019/08/phone.png') center no-repeat;
-    flex: 1;
-}
+
 
 /*form styling*/
 .form-data
 {
     width: 100%;
     max-width: 35rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .form-data form
@@ -92,7 +87,7 @@ body
     border: 2px solid #eee;
     display: flex;
     flex-direction: column;
-    padding: 2rem 4rem;
+    padding: 3rem 4rem;
     text-align: center;
 }
 
@@ -102,10 +97,6 @@ body
     /*width: 17.5rem;*/
     margin-bottom: 2.5rem;
 }
-/* .logo h1{
-    background-image: url('./instagram.png');
-    background-repeat: no-repeat;
-} */
 
 /*form input styling*/
 .form-data form input
@@ -160,7 +151,7 @@ body
     right: 0;
 }
 
-/*FACEBOOK ligin text styling*/
+
 .facebook-login
 {
     font-size: 1.4rem;
@@ -185,14 +176,14 @@ body
     margin-right: .7rem;
 }
 
-/*password reset styling*/
+
 .password-reset
 {
     font-size: 1.2rem;
     color: #003569;
 }
 
-/*signup text styling*/
+
 .sign-up
 {
     text-align: center;
@@ -202,6 +193,10 @@ body
     background-color: #fff;
     border: 2px solid #eee;
     margin: 1rem 0;
+}
+.phone-app-demo img{
+    width: 85%;
+    height: 94%;
 }
 
 .sign-up
@@ -221,7 +216,7 @@ body
     font-weight: bold;
 }
 
-/*Play stor and App store image styling*/
+
 .get-the-app
 {
     font-size: 1.4rem;
@@ -253,7 +248,7 @@ body
     margin-right: 1rem;
 }
 
-/*Footer link styling*/
+
 footer
 {
     padding: 5rem 0;
@@ -302,7 +297,7 @@ footer .container
 
     .form-data
     {
-        margin: 0 auto;
+        margin: 2rem auto;
     }
 
     #wrapper > .container
