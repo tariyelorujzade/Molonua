@@ -18,7 +18,7 @@
             </div>
             <div class="form-data">
      
-                <form action="/">
+                <form action="/login" method="POST">
                     <div class="logo">
                       <img class="form-logo" src="form-logo.png" />
                     </div>
@@ -61,21 +61,7 @@
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script> 
-    $('form').on('submit', (e) => {
-      e.preventDefault();
-      var username = $('#username').val();
-      var password = $('#password').val();
-   
-    var data = {
-        username,
-        password 
-    };
-    $.post('/registration',data,function(){
-        console.log('server received our data');
-    })
-    })
-    </script>
+
 </body>
 </html>
 

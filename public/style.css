@@ -251,7 +251,7 @@ body
 
 footer
 {
-    padding: 5rem 0;
+    margin: 5rem  0 2rem 0;
 }
 
 footer .container
@@ -329,19 +329,17 @@ footer .container
     }
     .form-data form
     {
-        background-color: transparent;
         border: none;
         padding: 0 2rem;
     }
     .sign-up
     {
-        background-color: transparent;
         border: none;
         margin: 4rem 0;
     }
     footer
     {
-        padding-bottom: 2rem;
+      
     }
 }
 
