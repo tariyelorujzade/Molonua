@@ -45,7 +45,7 @@ body
 #wrapper
 {
     width: 100%;
-    display: flex;
+    .form-data f    display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 2rem;
@@ -100,7 +100,7 @@ body
 /*form input styling*/
 .form-data form input
 {
-    padding: .8rem;
+    padding: 1rem;
     margin-bottom: .5rem;
     border: 2px solid #eee;
     border-radius: .4rem;
