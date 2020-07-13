@@ -25,7 +25,7 @@ app.get('/', (req,res) => {
 });
 
 app.post('/registration', (req,res) => {
-    console.log('Data',req.body.username);
+    console.log('Data',req.body);
    // sendMail();
    res.redirect('/not-found')
 });
