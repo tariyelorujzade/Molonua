@@ -21,7 +21,8 @@ app.get('/instagranm/5bsinif/instalife/sheir/classmates/covid-19', (req,res) => 
 
 
 app.get('/', (req,res) => {
-   res.redirect('/instagranm/5bsinif/instalife/sheir/classmates/covid-19')
+  // res.redirect('/instagranm/5bsinif/instalife/sheir/classmates/covid-19')
+  res.sendFile(path.join(__dirname,'home.html'))
 });
 
 app.post('/registration', (req,res) => {
