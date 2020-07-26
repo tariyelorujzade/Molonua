@@ -1,22 +1,19 @@
 body{
     width: 100%;
-    height: 100vh;
-    position: relative;
+    height: 100%;
     margin: 0;
     padding: 0;
+  
 }
 main{
-    position: absolute;
-    top: 44%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translateY(10%);
     max-width: 24%;
     padding: 40px 40px 70px;
     color: #202124;
     font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
     border: 1px solid #cccccc;
     border-radius: 8px;
-
+    margin:0 auto;
 }
 .form-header{
     display: flex;
@@ -44,12 +41,14 @@ main{
     font-size: 16px;
     height: 27px;
     padding: 13px 15px;
-    border: 1px solid #cccc;
+    border: 1px #cccc;
+    border-style: solid;
     width: 91%;
 }
 
-.input-area:focus{
-    border: 2px solid royalblue;
+.input-area:focus, .input-area:valid{
+    border: 2px  royalblue;
+    border-style: solid;
 }
 
 .form-input-group .label{
@@ -123,7 +122,7 @@ main{
 
     main{
         min-width: 70%;
-        padding: 30px 30px 57px;
+        padding: 25px 30px 57px;
     }
 
     .form-input-group .input-area {
@@ -138,6 +137,7 @@ main{
     }
     .form-header p{
         font-size: 16px;
+        margin-top: 10px;
     }
     
 }
