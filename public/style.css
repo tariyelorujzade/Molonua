@@ -45,7 +45,7 @@ body
 #wrapper
 {
     width: 100%;
-    .form-data f    display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 2rem;
@@ -287,38 +287,6 @@ footer .container
     color: #999999;
 }
 
-/*responsive styling*/
-@media (max-width: 900px)
-{
-    .phone-app-demo{
-        display: none;
-    }
-
-    .form-data
-    {
-        margin: 2rem auto;
-    }
-
-    #wrapper > .container
-    {
-        padding: 0;
-    }
-
-    footer .container
-    {
-        justify-content: center;
-    }
-
-    .footer-nav ul
-    {
-        justify-content: center;
-    }
-
-    .footer-nav ul li
-    {
-        margin-bottom: 1rem;
-    }
-}
 
 @media (max-width: 450px)
 {
@@ -336,10 +304,7 @@ footer .container
         border: none;
         margin: 4rem 0;
     }
-    footer
-    {
-      
-    }
+ 
 }
 
 

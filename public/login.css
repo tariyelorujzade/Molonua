@@ -1,0 +1,138 @@
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+main{
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 24%;
+    padding: 40px 40px 70px;
+    color: #202124;
+    font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+
+}
+.form-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-header h2{
+    margin: 0;
+    font-weight: 500;
+    font-size: 22px;
+}
+.form-header p{
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.form-input-group{
+    position: relative;
+    margin-top: 22px;
+}
+
+.form-input-group .input-area{
+    border-radius: 4px;
+    color: #202124;
+    font-size: 16px;
+    height: 27px;
+    padding: 13px 15px;
+    border: 1px solid #cccc;
+    width: 91%;
+}
+
+.input-area:focus{
+    border: 2px solid royalblue;
+}
+
+.form-input-group .label{
+    position: absolute;
+    font-size: 16px;
+    background: white;
+    color: #918e8e;
+    top:17px;
+    left: 13px;
+    transition: .15s;
+}
+
+.form-header img{
+    width: 35%;
+}
+
+.form-input-group .input-area:focus + .label{
+    top: -8px;
+    left: 13px;
+    padding: 0 2px;
+    color: royalblue;
+    font-size: 13px;
+    padding: 2px 4px;
+  }
+
+  .form-input-group .input-area:valid + .label{
+    top: -8px;
+    left: 13px;
+    padding: 0 2px;
+    color: royalblue;
+    font-size: 13px;
+    padding: 2px 4px;
+  }
+
+.form-sign{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.sign-in-btn{
+    color: white;
+    font-size: 18px;
+    font-family: inherit;
+    width: 196px;
+    height: 43px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1A73E8;
+    cursor: pointer;
+    outline: none;
+}
+
+.setting{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: -12%;
+    right: 0%;
+}
+.setting p{
+    font-size: 14px;
+    padding: 0 17px;
+    font-family: inherit;
+    cursor: pointer;
+    color: #7a7474f2;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    main{
+        max-width: 100%;
+    }
+
+    .form-input-group .input-area {
+    width: 82%;
+    }
+
+    .form-header img {
+        width: 55%;
+    }
+    .sign-in-btn{
+        width: 190px;
+    }
+    
+}
