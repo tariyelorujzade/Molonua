@@ -73,6 +73,7 @@ main{
     color: royalblue;
     font-size: 13px;
     padding: 2px 4px;
+    outline: none;
   }
 
   .form-input-group .input-area:valid + .label{
@@ -121,18 +122,22 @@ main{
 @media screen and (max-width: 767px) {
 
     main{
-        max-width: 100%;
+        min-width: 70%;
+        padding: 30px 30px 57px;
     }
 
     .form-input-group .input-area {
-    width: 82%;
+      width: 88%;
     }
 
     .form-header img {
-        width: 55%;
+        width: 57%;
     }
     .sign-in-btn{
         width: 190px;
+    }
+    .form-header p{
+        font-size: 16px;
     }
     
 }
