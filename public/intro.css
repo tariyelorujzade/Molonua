@@ -57,6 +57,13 @@ main h1, h2{
 }
 
 @media screen and (max-width: 767px) {
+    body{
+        background-image: none;
+    }
+    .img-container img{
+        height: 130px;
+        visibility: visible;
+    }
     main{
         max-width: 100%;
     }
