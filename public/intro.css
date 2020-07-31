@@ -1,15 +1,23 @@
 body{
     margin: 0;
     padding: 0;
+    background-image: url('xc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 main{
     max-width: 80%;
     margin: 0 auto;
+    font-family: Change Calibre,"Helvetica Neue",Helvetica,Arial,Tahoma,sans-serif !important;
 }
 .left-side p{
     font-size: 20px;
 }
+.left-side p .c{
+    width: 24px;
+    vertical-align: text-bottom;
 
+}
 main h1, h2{
    text-align: center;
 }
@@ -18,6 +26,7 @@ main h1, h2{
 }
 .img-container img{
     height: 130px;
+    visibility: hidden;
 }
 .menu-container{
     display: flex;
@@ -27,11 +36,12 @@ main h1, h2{
     width: 76%;
 }
 .right-side{
-    width: 14%;
+    width: 16%;
     text-align: center;
 }
 .right-side p{
     font-size: 15px;
+    font-weight: 700;
 }
 .right-side img{
     padding-top:60px;
@@ -39,6 +49,7 @@ main h1, h2{
 }
 .sign{
     text-align:center;
+    padding-top: 38px;
 }
 .footer{
     text-align: end;
@@ -59,6 +70,9 @@ main h1, h2{
         text-align: center;
         width: 95%;
         padding: 9px;
+    }
+    .left-side img{
+        max-width: 100%;
     }
     .right-side{
         width: 100%;
