@@ -61,6 +61,7 @@ main h1, h2{
         padding: 9px;
     }
     .right-side{
+        width: 100%;
         text-align: center;
     }
     .footer{
