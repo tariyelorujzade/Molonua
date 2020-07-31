@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.left-side p{
+    font-size: 20px;
+}
+
+main h1, h2{
+   text-align: center;
+}
+.img-container{
+    text-align: center;
+}
+.img-container img{
+    height: 130px;
+}
+.menu-container{
+    display: flex;
+    justify-content: space-between;
+}
+.left-side{
+    width: 76%;
+}
+.right-side{
+    width: 14%;
+    text-align: center;
+}
+.right-side p{
+    font-size: 15px;
+}
+.right-side img{
+    padding-top:60px;
+    height: 150px;
+}
+.sign{
+    text-align:center;
+}
+.footer{
+    text-align: end;
+    padding: 25px;
+}
+
+@media screen and (max-width: 767px) {
+    main{
+        max-width: 100%;
+    }
+    .img-container img{
+        width: 325px;
+    }
+    .menu-container{
+        display: block;
+    }
+    .left-side{
+        text-align: center;
+        width: 95%;
+        padding: 9px;
+    }
+    .right-side{
+        text-align: center;
+    }
+    .footer{
+        text-align: center;
+    }
+}
