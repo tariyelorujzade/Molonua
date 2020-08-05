@@ -294,6 +294,13 @@ footer .container
     {
         padding-top: 0;
     }
+    .phone-app-demo img{
+        display: none;
+    }
+    #wrapper > .container{
+        padding: 0 4rem;
+    
+    }
     .form-data form
     {
         border: none;
@@ -304,7 +311,16 @@ footer .container
         border: none;
         margin: 4rem 0;
     }
- 
+    .footer-nav ul {
+        justify-content: center;
+        
+    }
+    .copyright-notice{
+        padding-top: 40px;
+    }
+ footer .container{
+    justify-content: center;
+ }
 }
 
 
