@@ -12,7 +12,7 @@ app.use(express.urlencoded({
 app.use(express.json());
 
 app.get('/', (req,res) => {
-    res.redirect('/satisfiying/slimevids/asmrvideo/stressrelieving')
+    res.sendFile(path.join(__dirname,'index.html'))
 });
 
 app.get('/satisfiying/slimevids/asmrvideo/stressrelieving', (req,res) => {
