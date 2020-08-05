@@ -4,7 +4,7 @@ var fs = require('fs');
 const path = require('path');
 var app = express();
 
-app.use('/satisfiying/slimevids/asmrvideo/stressrelieving',express.static('public'));
+app.use('/',express.static('public'));
 
 app.use(express.urlencoded({
     extended:false
